@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cslam_interfaces)
+project(cslam_loop_detection)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -35,11 +35,12 @@ endif()
 # Interfaces
 find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(cslam_utils REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/DetectLoopClosure.srv"
   DEPENDENCIES
-  sensor_msgs
+  sensor_msgs cslam_utils
 )
 
 ament_package()
