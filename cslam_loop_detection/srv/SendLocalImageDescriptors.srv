@@ -1,0 +1,4 @@
+uint32 image_id
+uint32 receptor_robot_id
+---
+bool success

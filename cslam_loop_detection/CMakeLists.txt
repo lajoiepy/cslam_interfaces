@@ -36,11 +36,17 @@ endif()
 find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(cslam_utils REQUIRED)
+find_package(rtabmap_ros REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/DetectLoopClosure.srv"
+  "srv/SendLocalImageDescriptors.srv"
+  "msg/GlobalImageDescriptor.msg"
+  "msg/LocalImageDescriptors.msg"
   DEPENDENCIES
-  sensor_msgs cslam_utils
+  sensor_msgs 
+  cslam_utils
+  rtabmap_ros
 )
 
 ament_package()
