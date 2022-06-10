@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cslam_loop_detection)
+project(cslam_loop_detection_interfaces)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -35,7 +35,7 @@ endif()
 # Interfaces
 find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(cslam_utils REQUIRED)
+find_package(cslam_common_interfaces REQUIRED)
 find_package(rtabmap_ros REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -45,7 +45,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/InterRobotLoopClosure.msg"
   DEPENDENCIES
   sensor_msgs 
-  cslam_utils
+  cslam_common_interfaces
   rtabmap_ros
 )
 

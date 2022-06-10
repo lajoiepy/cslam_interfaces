@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cslam_utils)
+project(cslam_common_interfaces)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
