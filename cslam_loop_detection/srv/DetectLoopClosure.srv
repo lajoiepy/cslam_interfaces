@@ -1,6 +1,0 @@
-cslam_utils/ImageId image
----
-bool is_detected
-int32 from_id
-int32 detected_loop_closure_id
-int32[] best_matches

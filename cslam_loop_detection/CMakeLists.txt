@@ -39,7 +39,6 @@ find_package(cslam_utils REQUIRED)
 find_package(rtabmap_ros REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/DetectLoopClosure.srv"
   "srv/SendLocalImageDescriptors.srv"
   "msg/GlobalImageDescriptor.msg"
   "msg/LocalImageDescriptors.msg"
