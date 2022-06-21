@@ -41,6 +41,7 @@ find_package(rtabmap_ros REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SendLocalImageDescriptors.srv"
   "msg/GlobalImageDescriptor.msg"
+  "msg/GlobalImageDescriptors.msg"
   "msg/LocalImageDescriptors.msg"
   "msg/InterRobotLoopClosure.msg"
   DEPENDENCIES
