@@ -40,6 +40,7 @@ find_package(nav_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/KeyframeRGB.msg"
   "msg/KeyframeOdom.msg"
+  "msg/OptimizationResult.msg"
   DEPENDENCIES
   sensor_msgs
   nav_msgs
