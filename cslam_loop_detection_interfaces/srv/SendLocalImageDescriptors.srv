@@ -1,5 +1,0 @@
-uint32 image_id
-uint32 receptor_robot_id
-uint32 receptor_image_id
----
-bool success
