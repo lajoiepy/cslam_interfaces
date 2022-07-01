@@ -43,6 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GlobalImageDescriptors.msg"
   "msg/LocalImageDescriptors.msg"
   "msg/InterRobotLoopClosure.msg"
+  "msg/LocalDescriptorsRequest.msg"
   DEPENDENCIES
   sensor_msgs
   cslam_common_interfaces
