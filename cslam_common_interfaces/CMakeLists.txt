@@ -41,6 +41,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/KeyframeRGB.msg"
   "msg/KeyframeOdom.msg"
   "msg/OptimizationResult.msg"
+  "msg/MultiRobotKey.msg"
+  "msg/PoseGraphEdge.msg"
+  "msg/PoseGraphValue.msg"
+  "msg/PoseGraph.msg"
+  "msg/RobotIDs.msg"
   DEPENDENCIES
   sensor_msgs
   nav_msgs

@@ -1,3 +1,3 @@
-string key
+MultiRobotKey key
 
 geometry_msgs/Pose pose
