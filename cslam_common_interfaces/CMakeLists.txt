@@ -45,7 +45,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PoseGraphEdge.msg"
   "msg/PoseGraphValue.msg"
   "msg/PoseGraph.msg"
-  "msg/RobotIDs.msg"
+  "msg/RobotIds.msg"
+  "msg/OptimizerState.msg"
   DEPENDENCIES
   sensor_msgs
   nav_msgs
