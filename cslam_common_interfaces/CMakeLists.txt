@@ -35,6 +35,7 @@ endif()
 # Interfaces
 find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -46,9 +47,12 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PoseGraphValue.msg"
   "msg/PoseGraph.msg"
   "msg/RobotIds.msg"
+  "msg/RobotIdsAndOrigin.msg"
+  "msg/ReferenceFrames.msg"
   "msg/OptimizerState.msg"
   DEPENDENCIES
   sensor_msgs
+  geometry_msgs
   nav_msgs
 )
 
