@@ -41,6 +41,7 @@ find_package(nav_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/KeyframeRGB.msg"
   "msg/KeyframeOdom.msg"
+  "msg/KeyframePointCloud.msg"
   "msg/OptimizationResult.msg"
   "msg/MultiRobotKey.msg"
   "msg/PoseGraphEdge.msg"

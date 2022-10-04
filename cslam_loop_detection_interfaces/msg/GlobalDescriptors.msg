@@ -1,0 +1,1 @@
+cslam_loop_detection_interfaces/GlobalDescriptor[] descriptors

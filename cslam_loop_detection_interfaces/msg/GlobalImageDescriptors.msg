@@ -1,1 +1,0 @@
-cslam_loop_detection_interfaces/GlobalImageDescriptor[] descriptors

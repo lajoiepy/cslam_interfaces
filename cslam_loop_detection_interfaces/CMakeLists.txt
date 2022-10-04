@@ -39,8 +39,8 @@ find_package(cslam_common_interfaces REQUIRED)
 find_package(rtabmap_ros REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/GlobalImageDescriptor.msg"
-  "msg/GlobalImageDescriptors.msg"
+  "msg/GlobalDescriptor.msg"
+  "msg/GlobalDescriptors.msg"
   "msg/LocalImageDescriptors.msg"
   "msg/InterRobotLoopClosure.msg"
   "msg/IntraRobotLoopClosure.msg"
