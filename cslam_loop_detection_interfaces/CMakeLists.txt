@@ -42,6 +42,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GlobalDescriptor.msg"
   "msg/GlobalDescriptors.msg"
   "msg/LocalImageDescriptors.msg"
+  "msg/LocalPointCloudDescriptors.msg"
   "msg/InterRobotLoopClosure.msg"
   "msg/IntraRobotLoopClosure.msg"
   "msg/LocalDescriptorsRequest.msg"
