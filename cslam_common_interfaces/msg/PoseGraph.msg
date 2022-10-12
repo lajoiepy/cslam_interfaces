@@ -5,3 +5,14 @@ RobotIds connected_robots
 
 cslam_common_interfaces/PoseGraphEdge[] edges
 cslam_common_interfaces/PoseGraphValue[] values
+
+# The following fields are for logging purposes only
+# and should be left empty otherwise.
+# They are not used by the CSLAM system.
+sensor_msgs/NavSatFix[] gps_values
+uint32 nb_matches
+uint32 nb_failed_matches
+uint32 nb_vertices_transmitted
+uint64 front_end_cumulative_communication_bytes
+float64 sparsification_cumulative_computation_time
+
