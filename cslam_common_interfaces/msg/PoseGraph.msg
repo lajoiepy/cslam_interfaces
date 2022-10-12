@@ -9,6 +9,7 @@ cslam_common_interfaces/PoseGraphValue[] values
 # The following fields are for logging purposes only
 # and should be left empty otherwise.
 # They are not used by the CSLAM system.
+uint32[] gps_values_idx
 sensor_msgs/NavSatFix[] gps_values
 uint32 nb_matches
 uint32 nb_failed_matches
