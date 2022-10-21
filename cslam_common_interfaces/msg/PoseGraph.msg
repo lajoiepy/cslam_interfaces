@@ -14,6 +14,8 @@ sensor_msgs/NavSatFix[] gps_values
 uint32 nb_matches
 uint32 nb_failed_matches
 uint32 nb_vertices_transmitted
+uint32 nb_matches_selected
 uint64 front_end_cumulative_communication_bytes
 float64 sparsification_cumulative_computation_time
-
+cslam_common_interfaces/InterRobotMatches spectral_matches
+cslam_common_interfaces/InterRobotMatches greedy_matches

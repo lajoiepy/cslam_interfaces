@@ -37,6 +37,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(rtabmap_ros REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/KeyframeRGB.msg"
@@ -52,10 +53,21 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/RobotIdsAndOrigin.msg"
   "msg/ReferenceFrames.msg"
   "msg/OptimizerState.msg"
+  "msg/GlobalDescriptor.msg"
+  "msg/GlobalDescriptors.msg"
+  "msg/LocalImageDescriptors.msg"
+  "msg/LocalPointCloudDescriptors.msg"
+  "msg/InterRobotLoopClosure.msg"
+  "msg/IntraRobotLoopClosure.msg"
+  "msg/LocalDescriptorsRequest.msg"
+  "msg/LocalKeyframeMatch.msg"
+  "msg/InterRobotMatch.msg"
+  "msg/InterRobotMatches.msg"
   DEPENDENCIES
   sensor_msgs
   geometry_msgs
   nav_msgs
+  rtabmap_ros
 )
 
 ament_package()

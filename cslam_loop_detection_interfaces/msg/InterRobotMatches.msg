@@ -1,2 +1,0 @@
-uint32 robot_id
-cslam_loop_detection_interfaces/InterRobotMatch[] matches
