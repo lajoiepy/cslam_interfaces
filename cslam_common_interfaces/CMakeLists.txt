@@ -67,7 +67,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   sensor_msgs
   geometry_msgs
   nav_msgs
-  rtabmap_ros
   rtabmap_msgs
 )
 
